@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 2/3 - Project</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <h1>Consumindo a API do IBGE</h1>
+
+    <div style="display: flex; flex-direction: column;">
+        <label for="sexo">Selecione o sexo:</label>
+        <select name="sexo" id="sexoSelect">
+            <option value="U" selected>Ambos</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>
+    </div>
+    <br>
+    <input id="nameSelect" type="text">
+    <button onclick="getIBGE()">BUSCAR</button>
+
+    <table>
+        <tbody></tbody>
+    </table>
+
+    <script src="index.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
